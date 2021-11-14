@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:sidehustle_capstone2_group3/src/constants/constants.dart';
 import 'package:sidehustle_capstone2_group3/src/views/lofi_sign.dart';
+import 'package:sidehustle_capstone2_group3/src/views/remember_me_forget_password.dart';
 
 class HifiScreen extends StatelessWidget {
   static const id = 'HifiView';
@@ -26,8 +27,9 @@ class HifiScreen extends StatelessWidget {
         padding: const EdgeInsets.symmetric(vertical: 40, horizontal: 30),
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.stretch,
-          children: [
+          children: const [
             // All OUR WIDGETS WILL GO IN HERE
+            RememberMeForgetPassword(),
           ],
         ),
       ),

@@ -25,7 +25,7 @@ class LofiScreen extends StatelessWidget {
         padding: const EdgeInsets.symmetric(vertical: 40, horizontal: 30),
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.stretch,
-          children: [
+          children: const [
             // All OUR WIDGETS WILL GO IN HERE
           ],
         ),
