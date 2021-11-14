@@ -1,15 +1,12 @@
 import 'package:flutter/material.dart';
+import 'package:sidehustle_capstone2_group3/src/constants/constants.dart';
 
-class RememberMeForgetPassword extends StatefulWidget {
+class RememberMeForgetPassword extends StatelessWidget {
   const RememberMeForgetPassword({Key? key}) : super(key: key);
 
-  @override
-  State<RememberMeForgetPassword> createState() =>
-      _RememberMeForgetPasswordState();
-}
+// RememberMeForgetPassword
+  final bool value = false;
 
-class _RememberMeForgetPasswordState extends State<RememberMeForgetPassword> {
-  bool value = false;
   @override
   Widget build(BuildContext context) {
     return Row(
@@ -17,13 +14,16 @@ class _RememberMeForgetPasswordState extends State<RememberMeForgetPassword> {
         SizedBox(
           width: 30,
           child: CheckboxListTile(
-            controlAffinity: ListTileControlAffinity.leading,
-            value: value,
-            onChanged: (value) => setState(() {
+              controlAffinity: ListTileControlAffinity.leading,
+              value: value,
+              onChanged: (value) {
+                /*setState(() {
               this.value = value!;
-            }),
-            activeColor: const Color(0xFF46A0AE),
-          ),
+            })*/
+              },
+              activeColor: kHifiScafoldColor
+              //const Color(0xFF46A0AE),
+              ),
         ),
         const Text(
           'Remember Me',
